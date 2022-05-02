@@ -65,7 +65,7 @@ class MemoryControl extends React.Component {
 
   handleDeletingMemory = (id) => {
     this.props.firestore.delete({ collection: 'memories', doc: id });
-    this.setState({selectedMemory});
+    this.setState({selectedMemory: null});
   }
 
   render(){

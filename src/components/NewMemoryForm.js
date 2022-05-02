@@ -22,7 +22,7 @@ function NewMemoryForm(props){
   return (
     <React.Fragment>
       <ReusableForm
-        formSubmissionHandler={addTicketToFirestore}
+        formSubmissionHandler={addMemoryToFirestore}
         buttonText="Submit" />
     </React.Fragment>
   );
@@ -32,4 +32,4 @@ NewMemoryForm.propTypes = {
   onNewMemoryCreation: PropTypes.func
 };
 
-export default NewTicketForm;
+export default NewMemoryForm;

@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import reactLogo from "./../img/reactLogo.png";
 
 function MemoryDetail(props){
   const { memory, onClickingDelete } = props;
@@ -9,7 +8,6 @@ function MemoryDetail(props){
       <div className="flex items-center justify-center">
         <div className="max-w-sm rounded overflow-hidden shadow-lg mt-2 mb-2">
           <div className="flex items-center justify-center">
-            <img className="h-12 w-21" src={reactLogo} alt="React Logo" />
             <br/>
           </div>
           <div className="px-6 py-4">

@@ -1,10 +1,18 @@
-import './App.css';
+import React from "react";
+import Header from "./Header";
+import MemoryControl from "./MemoryControl";
+import Signin from "./Signin";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App() {
+function App(){
   return (
-    <div className="App">
-      
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/signin" element={<Signin />} />
+        <Route exact path="/" element={<MemoryControl />} />
+      </Routes>
+    </Router>
   );
 }
 
